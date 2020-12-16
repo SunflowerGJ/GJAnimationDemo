@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NFCScanViewController.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+- (IBAction)handleNFCScan:(id)sender {
+    NFCScanViewController *vcNext = [[NFCScanViewController alloc] init];
+    [self.navigationController pushViewController:vcNext animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
