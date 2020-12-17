@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3fab2a57-ad18-4f66-9010-a0e5101fa813" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo.xcodeproj/project.xcworkspace/xcuserdata/gj.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo.xcodeproj/xcuserdata/gj.xcuserdatad/xcschemes/GJAnimationDemo.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo.xcodeproj/xcuserdata/gj.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo/AppDelegate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo/AppDelegate.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo/Base.lproj/LaunchScreen.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo/Base.lproj/Main.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo/CAAnimationViewController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo/CAAnimationViewController.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo/CATransitionViewController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo/CATransitionViewController.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo/GJAnimationDemo.entitlements" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo/GJAnimationDemo.xcdatamodeld/.xccurrentversion" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo/GJAnimationDemo.xcdatamodeld/GJAnimationDemo.xcdatamodel/contents" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo/NFCManager.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo/NFCManager.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo/NFCScanViewController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo/NFCScanViewController.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo/NFCScanViewController.xib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo/ViewController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo/ViewController.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemo/main.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemoTests/GJAnimationDemoTests.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemoTests/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemoUITests/GJAnimationDemoUITests.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GJAnimationDemo/GJAnimationDemoUITests/Info.plist" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ljYyi4f62s6ndxIH1bZOWxYC8e" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3fab2a57-ad18-4f66-9010-a0e5101fa813" name="Default Changelist" comment="" />
+      <created>1608112225465</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608112225465</updated>
+      <workItem from="1608112227555" duration="1241000" />
+      <workItem from="1608183865756" duration="47000" />
+      <workItem from="1608196010316" duration="858000" />
+    </task>
+    <task id="LOCAL-00001" summary="改打包ID">
+      <created>1608112260047</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608112260047</updated>
+    </task>
+    <task id="LOCAL-00002" summary="添加ExportOptions.plist">
+      <created>1608167540713</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608167540713</updated>
+    </task>
+    <task id="LOCAL-00003" summary="设置version system：Apple Generic">
+      <created>1608174251595</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608174251596</updated>
+    </task>
+    <task id="LOCAL-00004" summary="delete ExportOptions.plist">
+      <created>1608174540606</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608174540606</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add ExportOptions.plist">
+      <created>1608196101408</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1608196101408</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="改打包ID" />
+    <MESSAGE value="添加ExportOptions.plist" />
+    <MESSAGE value="设置version system：Apple Generic" />
+    <MESSAGE value="delete ExportOptions.plist" />
+    <MESSAGE value="add ExportOptions.plist" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ExportOptions.plist" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="322" y="72" key="CommitChangelistDialog2" timestamp="1608196101109">
+      <screen x="0" y="23" width="1680" height="949" />
+    </state>
+    <state x="322" y="72" key="CommitChangelistDialog2/0.23.1680.949@0.23.1680.949" timestamp="1608196101109" />
+    <state x="417" y="123" width="934" height="748" key="DiffContextDialog" timestamp="1608174212116">
+      <screen x="0" y="23" width="1680" height="949" />
+    </state>
+    <state x="417" y="123" width="934" height="748" key="DiffContextDialog/0.23.1680.949@0.23.1680.949" timestamp="1608174212116" />
+    <state x="484" y="237" key="Vcs.Push.Dialog.v2" timestamp="1608196102819">
+      <screen x="0" y="23" width="1680" height="949" />
+    </state>
+    <state x="484" y="237" key="Vcs.Push.Dialog.v2/0.23.1680.949@0.23.1680.949" timestamp="1608196102819" />
+  </component>
+</project>
