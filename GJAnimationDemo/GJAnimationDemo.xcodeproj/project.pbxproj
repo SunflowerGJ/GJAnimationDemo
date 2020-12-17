@@ -467,6 +467,7 @@
 				CODE_SIGN_ENTITLEMENTS = GJAnimationDemo/GJAnimationDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9G6H78HN75;
 				INFOPLIST_FILE = GJAnimationDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -474,6 +475,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.joydigit.nexsight.nexop.RealMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "PP_ Joydigit_RealMobile_Dev";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -484,6 +486,7 @@
 				CODE_SIGN_ENTITLEMENTS = GJAnimationDemo/GJAnimationDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9G6H78HN75;
 				INFOPLIST_FILE = GJAnimationDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -491,6 +494,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.joydigit.nexsight.nexop.worker.zdjs.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = PP_ZDJS_Worker_Test_InHouse;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
