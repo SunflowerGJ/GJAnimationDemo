@@ -8,6 +8,7 @@
 
 #import "NFCScanViewController.h"
 #import "NFCManager.h"
+#import "NFCTagManager.h"
 
 @interface NFCScanViewController ()
 
@@ -21,25 +22,26 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
-- (IBAction)handleWriteNFC:(id)sender {
-}
-- (IBAction)handleScanStart:(id)sender {
-//    [_nfcReaderSession beginSession];
+- (IBAction)handleScanNFCUID:(id)sender {
     if (@available(iOS 11.0, *)) {
         __weak typeof(self) weakself=self;
 
         [[NFCManager sharedInstance] scanTagWithSuccessBlock:^(NFCNDEFMessage * _Nonnull message) {
             NSLog(@"扫描完成：%@",message);
                 for(NFCNDEFPayload *payload in message.records){
-                    NSLog(@"TNF:%d", payload.typeNameFormat);
+                    NSLog(@"TNF:%@", [NFCManager getNameFormat:payload.typeNameFormat]);
                     NSLog(@"Type: %@", payload.type.description);
                     NSLog(@"payload: %@", payload.payload.description);
-                
+                    NSLog(@"%@",payload.identifier);
+                    
                     dispatch_async(dispatch_get_main_queue(),^{
 
-                    NSString *str =[NSString stringWithFormat:@"TNF: %d\nType: %@\nPayload: %@", payload.typeNameFormat, payload.type.description, payload.payload.description];
+                        NSString *dataStr = [[NSString alloc] initWithData:payload.payload
+                                                                              encoding:NSUTF8StringEncoding];
+                        
+                        NSString *str =[NSString stringWithFormat:@"TNF: %d\nType: %@\nPayload: %@", payload.typeNameFormat, payload.type.description, payload.payload.description];
                         NSLog(@"%@",str);
-                        weakself.txvContent.text = [NFCManager getNameFormat:payload.typeNameFormat];
+                        weakself.txvContent.text = [NSString stringWithFormat:@"格式：%@\n内容：%@",[NFCManager getNameFormat:payload.typeNameFormat], dataStr];
                     });
                 }
         } andErrorBlock:^(NSError * _Nonnull error) {
@@ -48,6 +50,18 @@
     } else {
         // Fallback on earlier versions
     }
+}
+- (IBAction)handleScanNFCMsg:(id)sender {
+    __weak typeof(self) weakself=self;
+
+    [[NFCTagManager sharedInstance] scanTagWithSuccessBlock:^(NSString *message) {
+        NSLog(@"卡号：%@",message);
+        dispatch_async(dispatch_get_main_queue(),^{
+            weakself.txvContent.text = [NSString stringWithFormat:@"卡号：%@",message];
+        });
+        } andErrorBlock:^(NSError * _Nonnull error) {
+            
+        }];
 }
 
 /*

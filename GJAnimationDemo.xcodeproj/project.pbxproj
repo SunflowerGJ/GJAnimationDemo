@@ -20,6 +20,7 @@
 		27FBC6771C9A7DE30027ED65 /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27FBC6751C9A7DE30027ED65 /* 01.jpg */; };
 		27FBC67A1C9A7E1E0027ED65 /* CATransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FBC6791C9A7E1E0027ED65 /* CATransitionViewController.m */; };
 		27FBC67D1C9A8D6C0027ED65 /* CAAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FBC67C1C9A8D6C0027ED65 /* CAAnimationViewController.m */; };
+		320F67752592D5810063D248 /* NFCTagManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 320F67742592D5810063D248 /* NFCTagManager.m */; };
 		3227FD982588B91B00ED046A /* NFCScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3227FD962588B91B00ED046A /* NFCScanViewController.m */; };
 		3227FD992588B91B00ED046A /* NFCScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3227FD972588B91B00ED046A /* NFCScanViewController.xib */; };
 		3227FD9E2588C47B00ED046A /* NFCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3227FD9D2588C47B00ED046A /* NFCManager.m */; };
@@ -66,6 +67,8 @@
 		27FBC6791C9A7E1E0027ED65 /* CATransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransitionViewController.m; sourceTree = "<group>"; };
 		27FBC67B1C9A8D6C0027ED65 /* CAAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAAnimationViewController.h; sourceTree = "<group>"; };
 		27FBC67C1C9A8D6C0027ED65 /* CAAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAAnimationViewController.m; sourceTree = "<group>"; };
+		320F67732592D5810063D248 /* NFCTagManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NFCTagManager.h; sourceTree = "<group>"; };
+		320F67742592D5810063D248 /* NFCTagManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NFCTagManager.m; sourceTree = "<group>"; };
 		3227FD952588B91B00ED046A /* NFCScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NFCScanViewController.h; sourceTree = "<group>"; };
 		3227FD962588B91B00ED046A /* NFCScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NFCScanViewController.m; sourceTree = "<group>"; };
 		3227FD972588B91B00ED046A /* NFCScanViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NFCScanViewController.xib; sourceTree = "<group>"; };
@@ -178,6 +181,8 @@
 				3227FD972588B91B00ED046A /* NFCScanViewController.xib */,
 				3227FD9C2588C47B00ED046A /* NFCManager.h */,
 				3227FD9D2588C47B00ED046A /* NFCManager.m */,
+				320F67732592D5810063D248 /* NFCTagManager.h */,
+				320F67742592D5810063D248 /* NFCTagManager.m */,
 			);
 			name = NFC;
 			sourceTree = "<group>";
@@ -324,6 +329,7 @@
 				27FBC64C1C9A60890027ED65 /* GJAnimationDemo.xcdatamodeld in Sources */,
 				27FBC6401C9A60890027ED65 /* main.m in Sources */,
 				27FBC67A1C9A7E1E0027ED65 /* CATransitionViewController.m in Sources */,
+				320F67752592D5810063D248 /* NFCTagManager.m in Sources */,
 				3227FD982588B91B00ED046A /* NFCScanViewController.m in Sources */,
 				27FBC67D1C9A8D6C0027ED65 /* CAAnimationViewController.m in Sources */,
 			);
@@ -472,9 +478,9 @@
 				INFOPLIST_FILE = GJAnimationDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.joydigit.nexsight.nexop.worker.zdjs.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joydigit.nexsight.nexop.RealMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = PP_ZDJS_Worker_Test_Dev;
+				PROVISIONING_PROFILE_SPECIFIER = "PP_ Joydigit_RealMobile_Dev";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;

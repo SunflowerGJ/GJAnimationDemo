@@ -73,7 +73,7 @@ API_AVAILABLE(ios(11.0))
 }
 -(void)beginScan{
     if (@available(iOS 11.0, *)) {
-        self.session = [[NFCNDEFReaderSession alloc]initWithDelegate:self queue:nil invalidateAfterFirstRead:NO];
+        self.session = [[NFCNDEFReaderSession alloc]initWithDelegate:self queue:nil invalidateAfterFirstRead:NO];//YES为只读一个TAG然后结束，NO为读取多个
         self.session.alertMessage = @"准备扫描，请将卡片贴近手机";
         [self.session beginSession];
     }
@@ -187,6 +187,8 @@ API_AVAILABLE(ios(11.0)){
         
     });
 }
+
+
 //读取成功回调iOS13
 - (void)readerSession:(NFCNDEFReaderSession *)session didDetectTags:(NSArray<__kindof id<NFCNDEFTag>> *)tags API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(watchos, macos, tvos){
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -195,7 +197,8 @@ API_AVAILABLE(ios(11.0)){
             [session restartPolling];
             return;
         }
-        id  tag=tags.firstObject;
+        id tag=tags.firstObject;
+        
         [session connectToTag:tag completionHandler:^(NSError * _Nullable error) {
             if (error) {
                 session.alertMessage = @"连接NFC标签失败";
@@ -259,5 +262,53 @@ API_AVAILABLE(ios(11.0)){
 //
 - (void)readerSessionDidBecomeActive:(NFCNDEFReaderSession *)session API_AVAILABLE(ios(13.0)) API_UNAVAILABLE(watchos, macos, tvos){
     
+}
+
+- (NSString *)convertDataBytesToHex:(NSData *)dataBytes {
+    if (!dataBytes || [dataBytes length] == 0) {
+        return @"";
+    }
+    NSMutableString *hexStr = [[NSMutableString alloc] initWithCapacity:[dataBytes length]];
+    [dataBytes enumerateByteRangesUsingBlock:^(const void *bytes, NSRange byteRange, BOOL *stop) {
+        unsigned char *dataBytes = (unsigned char *)bytes;
+        for (NSInteger i = 0; i < byteRange.length; i ++) {
+            NSString *singleHexStr = [NSString stringWithFormat:@"%x", (dataBytes[i]) & 0xff];
+            if ([singleHexStr length] == 2) {
+                [hexStr appendString:singleHexStr];
+            } else {
+                [hexStr appendFormat:@"0%@", singleHexStr];
+            }
+        }
+    }];
+    return hexStr;
+}
+
+
+/// 从 16 进制字符串中拼出一个8位数“卡号”
+/// @param hexStr 16 进制字符串
+/// 16 进制字符串需要至少包含 3 个字节
+/**
+ * 04 c8 cd d2 d2 64 80
+ * 卡号这么取：取前三个字节进行处理，高低位按照 [低位][高位] 的顺序处理
+ * cd转10进制，不足三位补零，得205
+ * c804拼起来转10进制，不足五位补零，得51204
+ * 然后两者拼接起来，最终卡号20551204
+ */
+- (NSString *)getNumberWithHex:(NSString *)hexStr {
+    if ([hexStr.lowercaseString hasPrefix:@"0x"]) {
+        hexStr = [hexStr substringFromIndex:2];
+    }
+    if ([hexStr length] < 6) {
+        return hexStr;
+    }
+    
+    NSString *byte3 = [hexStr substringWithRange:NSMakeRange(4, 2)]; //低位（第3个字节）
+    NSString *byte2 = [hexStr substringWithRange:NSMakeRange(2, 2)]; //高位（第2个字节）
+    NSString *byte1 = [hexStr substringWithRange:NSMakeRange(0, 2)]; //低位（第1个字节）
+    NSString *tempStr1 = [NSString stringWithFormat:@"%3lu",strtoul([byte3 UTF8String],0,16)]; // 3位数字，不足前置补零
+    NSString *tempStr2 = [NSString stringWithFormat:@"%5lu",strtoul([[byte2 stringByAppendingString:byte1] UTF8String],0,16)]; // 5位数字，不足前置补零
+    NSString *tempStr = [tempStr1 stringByAppendingString:tempStr2];
+    
+    return tempStr;
 }
 @end
